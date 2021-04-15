@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta Flores</title>
+    <link rel="stylesheet" href="css/flores.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="sidebar">
+            <div class="toggle-btn">
+                <span>&#9776;</span>
+
+            </div>
+            <ul>
+                <li><img src="img/logo_oficial_de_ahpra.png" alt="Logo de la empresas" class="logo"></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="trabajo.html">Trabajo</a></li>
+                <li><a href="adopcion.html">Adopciones</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="flores.html">Flores</a></li>
+            </ul>
+
+        </div>
+        <nav class="nav">
+            <img src="img/logo_oficial_de_ahpra.png" alt="Logo de la empresas" class="logo">
+
+            <ul id="menuholder" class="hidden">
+                <li><a href="blog.html">Blog</a></li>
+
+
+                <li><a href="adopcion.html">Adopciones</a>
+                    <ul>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="contactanos.html">Contactanos</a>
+                    <ul>
+                        <li><a href="trabajo.html">Trabajo</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="donaciones.html">Donaciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="flores.html">Flores</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Venta de Flores</h1>
+        <p>Si no deseas donar y quieres obtener algo a cambio de tu dinero. En este apartado puedes comprar flores a nuestra asociacion y de esta manera estaras apoyando a la institucion para todas nuestras causas. Todas las flores mostradas en esta pagina
+            son flores de hibernadero y tratadas por expertos.
+
+        </p>
+        <section class="contenedor">
+            <section>
+                <div class="foto flor1"></div>
+                <h2>Girasol</h2>
+                <h3>L50</h3>
+                <input type="submit" value="Comprar" class="boton">
+            </section>
+            <section>
+                <div class="foto flor2"></div>
+                <h2>Rosas</h2>
+                <h3>L65</h3>
+                <input type="submit" value="Comprar" class="boton">
+            </section>
+            <section>
+                <div class="foto flor3"></div>
+                <h2>Margarita</h2>
+                <h3>L25</h3>
+                <input type="submit" value="Comprar" class="boton">
+            </section>
+        </section>
+        <section class="contenedor">
+            <section>
+                <div class="foto flor4"></div>
+                <h2>Petunias</h2>
+                <h3>L55</h3>
+                <input type="submit" value="Comprar" class="boton">
+            </section>
+            <section class="">
+                <div class="foto flor5"></div>
+                <h2>Orquideas</h2>
+                <h3>L30</h3>
+                <input type="submit" value="Comprar" class="boton">
+            </section>
+            <section>
+                <div class="foto flor6"></div>
+                <h2>Amapolas</h2>
+                <h3>L50</h3>
+                <input type="submit" value="Comprar" class="boton">
+            </section>
+        </section>
+        <section class="modal-container">
+            <section class="modal modal-close actives">
+                <p class="close">X</p>
+                <h1>Compra</h1>
+                <p>Todas las compras efectuadas se pagan al recibir el producto, porfavor introduzca datos reales y este pendiente al telefono para confirmar su envio y su compra</p>
+                <label for="txtcantidad">Cantidad</label>
+                <label for="txtdireccion">Direccion</label>
+                <label for="txtnumero">Numero</label> <br>
+                <input type="number">
+                <input type="text">
+                <input type="tel"><br>
+                <input type="button" value="Pedir" class="boton1">
+
+            </section>
+
+        </section>
+    </main>
+</body>
+<footer class="footer text-center bg-dark">
+    <p>
+        AHPRA WEB | <em>Derechos Reservados </em> &copy; 2021
+    </p>
+</footer>
+<script src="js/sidebar.js"></script>
+<script src="js/modal_flor.js"></script>
+
+</html>

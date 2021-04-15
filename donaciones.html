@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones</title>
+    <link rel="stylesheet" href="css/donacion.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="sidebar">
+            <div class="toggle-btn">
+                <span>&#9776;</span>
+
+            </div>
+            <ul>
+                <li><img src="img/logo_oficial_de_ahpra.png" alt="Logo de la empresas" class="logo"></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="trabajo.html">Trabajo</a></li>
+                <li><a href="adopcion.html">Adopciones</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="flores.html">Flores</a></li>
+            </ul>
+
+        </div>
+        <nav class="nav">
+            <img src="img/logo_oficial_de_ahpra.png" alt="Logo de la empresas" class="logo">
+
+            <ul id="menuholder" class="hidden">
+                <li><a href="blog.html">Blog</a></li>
+
+
+                <li><a href="adopcion.html">Adopciones</a>
+                    <ul>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="contactanos.html">Contactanos</a>
+                    <ul>
+                        <li><a href="trabajo.html">Trabajo</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="donaciones.html">Donaciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="flores.html">Flores</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Donaciones</h1>
+            <p>Si deseas ayudar a nuestra asociasion de manera economica para ser parte de nuestro cambio, puedes donarnos dinero a travez de los diferentes metodods de pago, el dinero recaudado se utlilizara para:</p>
+            <ul>
+                <li>Mantenimiento de las instalaciones</li>
+                <li>Equipos medicos para animales</li>
+                <li>Materiales quirurgicos para animales</li>
+                <li>Campañas de vacunacion y ayuda a animales</li>
+            </ul>
+            <p>Ninguna parte del dinero se utilizara para lucrarse y todo esta destinado a la ayuda del medio ambiente</p>
+        </section>
+        <section>
+            <section class="contenido">
+                <section class="pago">
+                    <section>
+                        <div class="imagen p1"></div>
+                        <input type="submit" value="Donar" class="boton">
+                    </section>
+                    <section>
+                        <div class="imagen p2"></div>
+                        <input type="submit" value="Donar" class="boton">
+                    </section>
+                    <section>
+                        <div class="imagen p3"></div>
+                        <input type="submit" value="Donar" class="boton">
+                    </section>
+                </section>
+
+                <label for="txtcantidad">Cantidad a Donar</label><br>
+                <input type="tel" class="botondon">
+            </section>
+            <section class="modal-container">
+                <section class="fomu modal modal-close actives">
+                    <p class="close">X</p>
+                    <h2>Tarjeta</h2>
+                    <form>
+                        <label for="txtnombre">Nombre del Titular</label>
+                        <label for="txttarjeta">Numero de Tarjeta</label> <br>
+                        <input type="text" class="txtnombre" id="txtnombre" placeholder="Como Aparece en la Tarjeta">
+                        <input type="tel" class="txttarjeta" id="txttarjeta"> <br>
+
+                        <label for="txtfecha">Fecha de Expiracion</label>
+                        <label for="txtcodigo">Codigo de Seguridad</label> <br>
+                        <input type="tel" class="txtmes" id="txtmes" placeholder="Mes">
+                        <input type="tel" class="txtyear" id="txtfyear" placeholder="Año">
+                        <input type="tel" class="txtcodigo" id="txtcodigo" placeholder="3 digitos"><br>
+                        <input type="submit" value="Confirmar" class="boton2">
+                    </form>
+                </section>
+                <section class="fomu Paypal modal1 modal-close actives">
+                    <p class="close">X</p>
+                    <h2>Paypal</h2>
+                    <form>
+                        <label for="txtcorreo">Correo Electronico</label><br>
+                        <input type="email" class="txtcorreo" id="txtcorreo" placeholder="Ejemplo@flaver.com"> <br>
+
+                        <label for="txtcodigo">Cotraseña</label> <br>
+                        <input type="text" class="txtcontra" id="txtcontra"><br>
+                        <input type="submit" value="Confirmar">
+                    </form>
+                </section>
+                <section class="fomu modal2 modal-close actives">
+                    <p class="close">X</p>
+                    <h2>Tigo Money</h2>
+                    <div class="mensaje">
+                        <p>Para donar mediante Tigo Money, Porfavor envie el dinero deseado al siguiente numero:</p><br>
+                        <p>+504 99898219 Numero de Ejemplo</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+<footer class="footer text-center bg-dark">
+    <p>
+        AHPRA WEB | <em>Derechos Reservados </em> &copy; 2021
+    </p>
+</footer>
+<script src="js/sidebar.js"></script>
+<script src="js/modal_donar.js"></script>
+
+</html>

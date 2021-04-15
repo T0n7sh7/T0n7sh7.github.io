@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="sidebar">
+            <div class="toggle-btn">
+                <span>&#9776;</span>
+
+            </div>
+            <ul>
+                <li><img src="img/logo_oficial_de_ahpra.png" alt="Logo de la empresas" class="logo"></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="trabajo.html">Trabajo</a></li>
+                <li><a href="adopcion.html">Adopciones</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="flores.html">Flores</a></li>
+            </ul>
+
+        </div>
+        <nav class="nav">
+            <img src="img/logo_oficial_de_ahpra.png" alt="Logo de la empresas" class="logo">
+
+            <ul id="menuholder" class="hidden">
+                <li><a href="blog.html">Blog</a></li>
+
+
+                <li><a href="adopcion.html">Adopciones</a>
+                    <ul>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="contactanos.html">Contactanos</a>
+                    <ul>
+                        <li><a href="trabajo.html">Trabajo</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="donaciones.html">Donaciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="flores.html">Flores</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Contactanos</h1>
+            <p>Este apartado es para aquellos que desen contactarnos para algun tipo de tema en especifico, estaremos atentos a todos los mensajes y le responderemos mediante Correo Electronico y por medio de Whatsapp. Si esta buscando trabajo, por favor
+                dirijase al apartado trabajo.</p>
+        </section>
+        <section class="formulario ">
+            <h2>Formulario</h2>
+            <form>
+                <label for="txtnombre ">Nombre Completo</label>
+                <input type="text " class="txtnombre " id="txtnombre ">
+
+                <label for="txtcorreo ">Correo Electronico</label>
+                <input type="email " class="txtcorreo " id="txtcorreo ">
+
+                <label for="txttelefono ">Numero de Telefono</label>
+                <input type="tel " class="com " value="+504 " readonly>
+                <input type="tel " class="txttelefono " id="txttelefono ">
+
+                <label for="razon ">Razon de Contacto</label>
+                <select name="razon " id="txtrazon ">
+                    <option value="1 ">Publicidad</option>
+                    <option value="2 ">Rescate Animal</option>
+                    <option value="3 ">Reclamo</option>
+                    <option value="4 ">Colaboracion</option>
+                    <option value="5 ">Sugerencia</option>
+                </select>
+
+                <label for="mensaje " class="mensaje ">Mensaje</label>
+                <textarea name="mensaje " id="txtmensaje" cols="30" rows="10"></textarea>
+                <input type="submit " value="Enviar " class="boton ">
+            </form>
+        </section>
+        <section>
+            <picture>
+                <source srcset="http://via.placeholder.com/190x400 " media="(min-width:1600px) " class="publicidad1 ">
+                <source srcset="http://via.placeholder.com/150x380 " media="(min-width:1270px) " class="publicidad1 ">
+                <img class="publicidad1 " src="http://via.placeholder.com/100x300 " alt="Publicidad1 ">
+            </picture>
+
+            <picture>
+                <source srcset="http://via.placeholder.com/190x400 " media="(min-width:1600px) " class="publicidad2 ">
+                <source srcset="http://via.placeholder.com/150x380 " media="(min-width:1270px) " class="publicidad2 ">
+                <img class="publicidad2 " src="http://via.placeholder.com/100x300 " alt="Publicidad2 ">
+            </picture>
+        </section>
+    </main>
+    <footer class="footer text-center bg-dark ">
+        <p>
+            AHPRA WEB | <em>Derechos Reservados </em> &copy; 2021
+        </p>
+    </footer>
+    <script src="js/sidebar.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/trabajo.css">
+    <title>Trabajo</title>
+</head>
+
+<body>
+    <header>
+        <div id="sidebar">
+            <div class="toggle-btn">
+                <span>&#9776;</span>
+
+            </div>
+            <ul>
+                <li><img src="img/logo_oficial_de_ahpra.png" alt="Logo de la empresas" class="logo"></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="trabajo.html">Trabajo</a></li>
+                <li><a href="adopcion.html">Adopciones</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="flores.html">Flores</a></li>
+            </ul>
+
+        </div>
+        <nav class="nav">
+            <img src="img/logo_oficial_de_ahpra.png" alt="Logo de la empresas" class="logo">
+
+            <ul id="menuholder" class="hidden">
+                <li><a href="blog.html">Blog</a></li>
+
+
+                <li><a href="adopcion.html">Adopciones</a>
+                    <ul>
+                        <li><a href="galeria.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="contactanos.html">Contactanos</a>
+                    <ul>
+                        <li><a href="trabajo.html">Trabajo</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="donaciones.html">Donaciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="flores.html">Flores</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="parrafo">
+            <h1>Estas Interesado en Trabajar con nosotros?</h1>
+            <p>
+                Ofrecemos un ambiente laboral amigable y unido a la naturaleza, para todos aquellos que deseen unirse a nuestro equipo de trabajo les invitamos a llenar el siguente formulario
+            </p>
+        </section>
+        <div class="container">
+
+            <section class="formulario" id="formulario">
+                <h2>Encuentra tu Trabajo Perfecto</h2>
+                <form>
+                    <div class="grupo-nombre">
+                        <label for="txtnombre" class="label1">Nombre Completo</label>
+                        <input type="text" id="txtnombre" class="input1" name="nombre">
+
+                    </div>
+                    <div class="grupo-correo">
+                        <label for="txtcorreo" class="label1">Correo Electronico</label>
+                        <input type="email" id="txtcorreo" class="input1" name="correo">
+
+                    </div>
+                    <div class="grupo-telefono">
+                        <label for="txttelefono" class="label1">Numero de Telefono</label>
+                        <input type="tel" class="com" value="+504" disabled>
+                        <input type="tel" id="txttelefono" class="input1" name="telefono">
+
+                    </div>
+                    <label for="razon" class="label1">Puesto al que Aspira</label>
+                    <div class="select">
+                        <select name="razon" id="select" aria-placeholder="Puesto">
+                        <option value="1">Recursos Humanos</option>
+                        <option value="2">Cuidado Animal</option>
+                        <option value="3">Administrativo</option>
+                        <option value="4">Chofer</option>
+                        <option value="5">Seguridad</option>
+                    </select>
+                    </div>
+                    <label for="mensaje" class="label1">Cuentanos, ¿Porque te gustaria trabajar con nosotros?</label>
+                    <textarea name="mensaje" id="txtmensaje" cols="30" rows="10"></textarea>
+                    <label for="cv" class="label1">Sube tu hoja de vida aqui</label>
+                    <input type="file" name="cv" class="cv">
+                    <input type="submit" value="Enviar Solicitud" class="boton" name="boton boton1">
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer text-center bg-dark">
+        <p>
+            AHPRA WEB | <em>Derechos Reservados </em> &copy; 2021
+        </p>
+    </footer>
+    <script src="js/sidebar.js"></script>
+    <script src="js/val_trab.js"></script>
+</body>
+
+</html>

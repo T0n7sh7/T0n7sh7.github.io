@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', 'sans-serif', 'Arial';
+}
+
+:root {
+    --clr-linear-1: linear-gradient(to left, var(--clr-primario-1), var(--clr-grad-1), var(--clr-primario-3));
+    --clr-primario-1: rgb(56, 139, 56);
+    --clr-primario-2: rgb(51, 95, 51);
+    --clr-primario-3: rgb(74, 186, 74);
+    --clr-primario-4: rgb(108, 108, 140);
+    --clr-relleno-1: rgb(29, 71, 29);
+    --clr-relleno-2: rgb(42, 104, 42);
+    --clr-negro: rgb(0, 0, 0);
+    --clr-titulos: rgb(154, 207, 176);
+    --clr-letra-1: rgb(161, 124, 48);
+    --clr-letra-2: rgb(214, 191, 75);
+    --clr-letra-3: rgb(108, 110, 217);
+    --clr-grad-1: rgb(61, 153, 61);
+    --ff-frases: 'Indie Flower', cursive;
+    --ff-hero: 'Playfair Display', serif;
+    --ff-letra-hero: 'Zilla Slab Highlight', cursive;
+    --ff-texto: 'Ubuntu', sans-serif;
+    --ff-titulos: 'RocknRoll One', sans-serif;
+}
+
+header {
+    align-items: center;
+    text-align: center;
+    margin: 20px 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    padding: 0 2.5em;
+    width: 80%;
+    transition: .5s ease;
+}
+
+.nav a:hover {
+    background-color: var(--clr-primario-2);
+    transition: .6s;
+    color: var(--clr-letra-2);
+    width: auto;
+}
+
+.nav li {
+    line-height: 3rem;
+    position: relative;
+    width: auto;
+}
+
+.nav li ul {
+    position: absolute;
+}
+
+.nav li:hover li {
+    max-height: 500px;
+    overflow: visible;
+}
+
+.nav>ul {
+    background-image: var(--clr-linear-1);
+    width: 100%;
+}
+
+.nav>ul>li {
+    display: inline-table;
+}
+
+.nav li li {
+    background-color: var(--clr-relleno-2);
+    max-height: 0;
+    overflow: hidden;
+    transition: .9s all;
+    list-style: none;
+}
+
+.nav>ul>li>ul {
+    width: 120%;
+}
+
+.logo {
+    position: relative;
+    width: 250px;
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(48, 117, 48, 0.705);
+    left: -200px;
+    transition: all 500ms linear;
+    display: none;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li {
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, .8);
+    text-align: center;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: blanchedalmond;
+    font-family: var(--ff-frases);
+}
+
+#sidebar ul li img {
+    width: 90%;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 3px solid #000;
+}
+
+main {
+    padding: 0px 50px;
+}
+
+h1 {
+    font-family: var(--ff-hero);
+}
+
+h2 {
+    font-family: var(--ff-titulos);
+}
+
+h3,
+h4 {
+    font-family: var(--ff-texto);
+}
+
+.hero-adop {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    position: relative;
+    color: #333;
+    box-shadow: 0px 3px 5px #333;
+    padding: 0px;
+    z-index: -1;
+}
+
+.hero-adop img {
+    display: block;
+    height: 500px;
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 0px;
+    border: none;
+}
+
+.hero-adop h1 {
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1rem 0.1rem 0.15rem rgb(0, 0, 0);
+}
+
+.info-1 h2 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.info-1 ul {
+    margin: 0px 0px 5rem 0px;
+    list-style: inside;
+}
+
+.info-1 ul li {
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: var(--ff-texto);
+    margin: 12px;
+}
+
+.title-cat h2 {
+    padding: 2rem;
+    margin: 5rem 0px 3rem 0px;
+    background-color: rgb(54, 109, 54);
+    color: white;
+    text-align: center;
+    font-family: var(--ff-titulos);
+}
+
+.pet-info-cats {
+    margin: 0px 0px 3rem 0px;
+    display: flex;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 3px 5px #333;
+}
+
+#cat-1 {
+    margin: 2.5rem;
+    width: 225px;
+    height: 300px;
+    background: url("../img/cat/cat-1.jpg") no-repeat;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px #333;
+}
+
+#cat-1:hover {
+    transition: ease-in-out 0.25s;
+    background: url("../img/cat/cat-1-hover.jpg") no-repeat;
+}
+
+.sect-cat1 h3 {
+    padding-left: 130px;
+}
+
+.sect-cat1 h4 {
+    padding-left: 100px;
+    padding-bottom: 3rem;
+}
+
+#cat-2 {
+    margin: 2.5rem;
+    width: 225px;
+    height: 300px;
+    background: url("../img/cat/cat-2.jpg") no-repeat;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px #333;
+}
+
+#cat-2:hover {
+    transition: ease-in-out 0.25s;
+    background: url("../img/cat/cat-2-hover.jpg") no-repeat;
+}
+
+.sect-cat2 h3 {
+    padding-left: 130px;
+}
+
+.sect-cat2 h4 {
+    padding-left: 100px;
+    padding-bottom: 3rem;
+}
+
+#cat-3 {
+    margin: 2.5rem;
+    width: 225px;
+    height: 300px;
+    background: url("../img/cat/cat-3.jpg") no-repeat;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px #333;
+}
+
+#cat-3:hover {
+    transition: ease-in-out 0.25s;
+    background: url("../img/cat/cat-3-hover.jpg") no-repeat;
+}
+
+.sect-cat3 h3 {
+    padding-left: 130px;
+}
+
+.sect-cat3 h4 {
+    padding-left: 105px;
+    padding-bottom: 3rem;
+}
+
+#cat-4 {
+    margin: 2.5rem;
+    width: 225px;
+    height: 300px;
+    background: url("../img/cat/cat-4.jpg") no-repeat;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px #333;
+}
+
+#cat-4:hover {
+    transition: ease-in 0.25s;
+    background: url("../img/cat/cat-4-hover.jpg") no-repeat;
+}
+
+.sect-cat4 h3 {
+    padding-left: 130px;
+}
+
+.sect-cat4 h4 {
+    padding-left: 100px;
+    padding-bottom: 3rem;
+}
+
+.title-dog h2 {
+    padding: 2rem;
+    margin: 5rem 0px 3rem 0px;
+    background-color: rgb(54, 109, 54);
+    color: white;
+    text-align: center;
+}
+
+.pet-info-dogs {
+    margin: 0px 0px 3rem 0px;
+    display: flex;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 3px 5px #333;
+}
+
+#dog-1 {
+    margin: 2.5rem;
+    width: 225px;
+    height: 300px;
+    background: url("../img/dog/dog-1.jpg") no-repeat;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px #333;
+}
+
+#dog-1:hover {
+    transition: ease-in-out 0.25s;
+    background: url("../img/dog/dog-1-hover.jpg") no-repeat;
+}
+
+.sect-dog1 h3 {
+    padding-left: 130px;
+}
+
+.sect-dog1 h4 {
+    padding-left: 80px;
+    padding-bottom: 3rem;
+}
+
+#dog-2 {
+    margin: 2.5rem;
+    width: 225px;
+    height: 300px;
+    background: url("../img/dog/dog-2.jpg") no-repeat;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px #333;
+}
+
+#dog-2:hover {
+    transition: ease-in-out 0.25s;
+    background: url("../img/dog/dog-2-hover.jpg") no-repeat;
+}
+
+.sect-dog2 h3 {
+    padding-left: 130px;
+}
+
+.sect-dog2 h4 {
+    padding-left: 120px;
+    padding-bottom: 3rem;
+}
+
+#dog-3 {
+    margin: 2.5rem;
+    width: 225px;
+    height: 300px;
+    background: url("../img/dog/dog-3.jpg") no-repeat;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px #333;
+}
+
+#dog-3:hover {
+    transition: ease-in-out 0.25s;
+    background: url("../img/dog/dog-3-hover.jpg") no-repeat;
+}
+
+.sect-dog3 h3 {
+    padding-left: 130px;
+}
+
+.sect-dog3 h4 {
+    padding-left: 105px;
+    padding-bottom: 3rem;
+}
+
+#dog-4 {
+    margin: 2.5rem;
+    width: 225px;
+    height: 300px;
+    background: url("../img/dog/dog-4.jpg") no-repeat;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px #333;
+}
+
+#dog-4:hover {
+    transition: ease-in 0.25s;
+    background: url("../img/dog/dog-4-hover.jpg") no-repeat;
+}
+
+.sect-dog4 h3 {
+    padding-left: 130px;
+}
+
+.sect-dog4 h4 {
+    padding-left: 80px;
+    padding-bottom: 3rem;
+}
+
+.text-center {
+    text-align: center;
+    margin: auto;
+}
+
+.bg-dark {
+    background-color: var(--clr-relleno-1);
+    color: #fff;
+}
+
+.footer {
+    padding: 4rem;
+}
+
+.footer p {
+    font-size: large;
+    font-weight: bold;
+}
+
+@media (max-width:1199.99px) {
+    #sidebar {
+        display: block;
+        z-index: 1;
+    }
+    #sidebar .toggle-btn {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+    }
+    nav {
+        display: none;
+    }
+    .pet-info-cats {
+        flex-wrap: wrap;
+    }
+    .pet-info-dogs {
+        flex-wrap: wrap;
+    }
+    .hero-adop h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width:1280px) {
+    header nav ul li a {
+        padding: 1rem 3.56rem;
+        display: block;
+        width: 100%;
+    }
+    #cat-1 {
+        margin: -1rem 1rem 2rem 1rem;
+        width: 225px;
+        height: 300px;
+    }
+    #dog-1 {
+        margin: 1rem;
+        width: 225px;
+        height: 300px;
+    }
+    .sect-cat1 h3 {
+        margin-left: 100px;
+        padding: 0px;
+    }
+    .sect-cat1 h4 {
+        padding-left: 80px;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width:1600px) {
+    header nav ul li a {
+        padding: 1rem 4.07rem;
+    }
+}

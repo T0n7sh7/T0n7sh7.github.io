@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Roboto', 'sans-serif', 'Arial';
+}
+
+:root {
+    --clr-linear-1: linear-gradient(to left, var(--clr-primario-1), var(--clr-grad-1), var(--clr-primario-3));
+    --clr-primario-1: rgb(56, 139, 56);
+    --clr-primario-2: rgb(51, 95, 51);
+    --clr-primario-3: rgb(74, 186, 74);
+    --clr-primario-4: rgb(108, 108, 140);
+    --clr-relleno-1: rgb(29, 71, 29);
+    --clr-relleno-2: rgb(42, 104, 42);
+    --clr-negro: rgb(0, 0, 0);
+    --clr-titulos: rgb(154, 207, 176);
+    --clr-letra-1: rgb(161, 124, 48);
+    --clr-letra-2: rgb(214, 191, 75);
+    --clr-letra-3: rgb(108, 110, 217);
+    --clr-grad-1: rgb(61, 153, 61);
+    --ff-frases: 'Indie Flower', cursive;
+    --ff-hero: 'Playfair Display', serif;
+    --ff-letra-hero: 'Zilla Slab Highlight', cursive;
+    --ff-texto: 'Ubuntu', sans-serif;
+    --ff-titulos: 'RocknRoll One', sans-serif;
+}
+
+header {
+    align-items: center;
+    text-align: center;
+    margin: 20px 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    padding: 0 2.5em;
+    width: 80%;
+    transition: .5s ease;
+}
+
+.nav a:hover {
+    background-color: var(--clr-primario-2);
+    transition: .6s;
+    color: var(--clr-letra-2);
+    width: auto;
+}
+
+.nav li {
+    line-height: 3rem;
+    position: relative;
+    width: auto;
+}
+
+.nav li ul {
+    position: absolute;
+}
+
+.nav li:hover li {
+    max-height: 500px;
+    overflow: visible;
+}
+
+.nav>ul {
+    background-image: var(--clr-linear-1);
+    width: 100%;
+}
+
+.nav>ul>li {
+    display: inline-table;
+}
+
+.nav li li {
+    background-color: var(--clr-relleno-2);
+    max-height: 0;
+    overflow: hidden;
+    transition: .9s all;
+    list-style: none;
+}
+
+.nav>ul>li>ul {
+    width: 120%;
+}
+
+.logo {
+    position: relative;
+    width: 250px;
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(48, 117, 48, 0.705);
+    left: -200px;
+    transition: all 500ms linear;
+    display: none;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li {
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, .8);
+    text-align: center;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: blanchedalmond;
+    font-family: var(--ff-frases);
+}
+
+#sidebar ul li img {
+    width: 90%;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 3px solid #000;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 1rem 35rem;
+    padding: 3rem 0px;
+    background-color: rgb(14, 112, 14);
+    color: white;
+    border: 10px solid rgb(2, 71, 2);
+    box-shadow: 0px 4px 10px black;
+    font-family: var(--ff-titulos);
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(14, 112, 14);
+    margin-bottom: 0px;
+    font-family: var(--ff-titulos);
+}
+
+.h2invert {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: black;
+    font-family: var(--ff-titulos);
+}
+
+main section p {
+    margin: 0rem 15rem 1rem 15rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    border: 10px solid rgb(2, 71, 2);
+    font-family: var(--ff-texto);
+}
+
+.pinvert {
+    margin: 0rem 1Wrem 1rem 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    border: 10px solid black;
+    background-color: rgb(2, 71, 2);
+    color: white;
+    font-family: var(--ff-texto);
+}
+
+.publicidad1 {
+    position: absolute;
+    top: 35rem;
+    left: 1%;
+}
+
+.publicidad2 {
+    position: absolute;
+    top: 35rem;
+    left: 87%;
+}
+
+.text-center {
+    text-align: center;
+    margin: auto;
+}
+
+.bg-dark {
+    background-color: var(--clr-relleno-1);
+    color: #fff;
+}
+
+.footer {
+    padding: 4rem;
+}
+
+.footer p {
+    font-size: large;
+    font-weight: bold;
+}
+
+@media (max-width:1199.99px) {
+    header img {
+        position: relative;
+        left: 30%;
+        width: 250px;
+    }
+    header nav {
+        position: relative;
+        width: 100%;
+    }
+    header nav .hmb {
+        position: absolute;
+        top: -5rem;
+        right: 5rem;
+        width: 42px;
+        height: 100px;
+        display: flex;
+    }
+    header nav .hmb div {
+        background-color: rgb(19, 85, 19);
+        height: 10px;
+        border-radius: 2px;
+        width: 100%;
+        border: 1px solid black;
+    }
+    header nav ul {
+        position: absolute;
+        top: 0em;
+        right: 2em;
+        width: 100%;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        max-height: 100vh;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+    header nav ul li a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+        padding: 1rem;
+    }
+    header nav ul.hidden {
+        max-height: 0px;
+    }
+    #menuhmb {
+        display: block;
+    }
+    h1 {
+        font-size: 1.5rem;
+        margin: 0rem 0rem;
+        padding: 0px;
+    }
+    main section p {
+        margin: 2rem;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .pinvert {
+        margin: 2rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-align: justify;
+        border: 10px solid black;
+        background-color: rgb(2, 71, 2);
+        color: white;
+    }
+    .publicidad1 {
+        visibility: hidden;
+    }
+    .publicidad2 {
+        visibility: hidden;
+    }
+    #sidebar {
+        display: block;
+        z-index: 1;
+    }
+    #sidebar .toggle-btn {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+    }
+    nav {
+        display: none;
+    }
+}
+
+@media (min-width:1280px) {
+    main {
+        min-width: 1280px;
+        max-width: 1599.9999;
+    }
+    h1 {
+        font-size: 3rem;
+        margin: 1rem 24rem;
+    }
+    header nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 1rem 2.89rem;
+    }
+    p {
+        margin: 0 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:1600px) {
+    header nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 1rem 4rem;
+        text-decoration: none;
+        color: #eee;
+        transition: background-color 1s ease;
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bolder;
+        margin: 1rem 35rem;
+        padding: 3rem 0px;
+        background-color: rgb(14, 112, 14);
+        color: white;
+        border: 10px solid rgb(2, 71, 2);
+        box-shadow: 0px 4px 10px black;
+    }
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+        color: rgb(14, 112, 14);
+        margin-bottom: 0px;
+    }
+    .h2invert {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 0px;
+        color: black;
+    }
+    main section p {
+        margin: 0rem 15rem 1rem 15rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-align: justify;
+        border: 10px solid rgb(2, 71, 2);
+    }
+    .pinvert {
+        margin: 0rem 15rem 1rem 15rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-align: justify;
+        border: 10px solid black;
+        background-color: rgb(2, 71, 2);
+        color: white;
+    }
+    .publicidad1 {
+        position: absolute;
+        top: 35rem;
+        left: 1%;
+    }
+    .publicidad2 {
+        position: absolute;
+        top: 35rem;
+        left: 87%;
+    }
+}
